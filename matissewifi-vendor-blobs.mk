@@ -42,10 +42,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/sensors.msm8226.so:system/lib/hw/sensors.msm8226.so 
 
-# Wifi
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/libqsap_sdk.so:system/lib/libqsap_sdk.so
-
 # Postprocessing
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
