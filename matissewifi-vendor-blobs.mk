@@ -53,6 +53,30 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/mpdecision:system/bin/mpdecision \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so
 
+# Adreno
+PRODUCT_COPY_FILES += \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libc2d2_z180.so:system/vendor/lib/libc2d2_z180.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libscve.so:system/vendor/lib/libscve.so 
 
 
 PRODUCT_COPY_FILES += \
@@ -186,16 +210,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libactuator_dw9804_camcorder.so:system/vendor/lib/libactuator_dw9804_camcorder.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libactuator_dw9804_camera.so:system/vendor/lib/libactuator_dw9804_camera.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libc2d2_z180.so:system/vendor/lib/libc2d2_z180.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libchromatix_imx175_common.so:system/vendor/lib/libchromatix_imx175_common.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libchromatix_imx175_preview.so:system/vendor/lib/libchromatix_imx175_preview.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
@@ -241,7 +258,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libFileMux.so:system/vendor/lib/libFileMux.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
@@ -261,7 +277,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/liblistenhardware.so:system/vendor/lib/liblistenhardware.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/liblistensoundmodel.so:system/vendor/lib/liblistensoundmodel.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
@@ -320,8 +335,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libP11Notify.so:system/vendor/lib/libP11Notify.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libprdrmdecrypt.so:system/vendor/lib/libprdrmdecrypt.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
@@ -343,10 +356,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
@@ -372,10 +381,5 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/hw/power.qcom.so:system/vendor/lib/hw/power.qcom.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
